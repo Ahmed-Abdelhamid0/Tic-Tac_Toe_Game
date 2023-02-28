@@ -1,0 +1,275 @@
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;	/*chrome,safari*/
+	-moz-box-sizing:border-box;		/*Firefox*/
+	-o-box-sizing:border-box;		/*Opera*/
+	-ms-box-sizing:border-box		/*IE*/
+}
+/****************************************************************/
+/*start container part*/
+.con{
+	margin:0.5% auto;
+	width:800px;
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	background-color:#03071e;
+	box-shadow:5px 5px 15px #999 ,-5px -5px 15px #999;
+	border-radius:0px 25px
+}
+/*end container part*/
+/****************************************************************/
+.con h1{
+	margin:5px;
+	color:#e85d04;
+}
+/****************************************************************/
+/*start colored div*/
+.con .color{
+	margin:5px;
+	padding:5px;
+}
+.con .color div:first-child{
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	margin-right:10px;
+	color:#ffba08;
+}
+.con .color div:last-child{
+	float:left;
+}
+.con .color div:last-child span{
+	padding:0px 10px;
+	margin:5px;
+	border-radius:2px;
+	border:1.2px solid #ff1654
+}
+.con .color div:nth-child(2) span:hover{
+	cursor:pointer;
+}
+.con .color div:nth-child(2) span:first-of-type{
+	background-color:black;
+}
+.con .color div:nth-child(2) span:nth-of-type(2){
+	background-color:white;
+}
+.con .color div:nth-child(2) span:last-of-type{
+	background-color:yellow;
+}
+/* end colored div */
+/****************************************************************/
+/*start button X and Y*/
+.con .btn{
+	display:block;
+}
+.con .btn div{
+	float:left;
+	width:100px;
+	padding:5px;
+	margin:5px;
+	text-align:center;
+	font-weight:bold;
+	border-radius:10px;
+	background-color:#e85d04;
+	cursor:pointer;
+}
+
+#x{color:black}
+#y{color:white}
+
+#xocolor{
+	display:block;
+	background-color:#ff1654;
+	border-radius:10px;
+	height:60px;
+	width:210px;
+	position:relative;
+	margin-top:-45px;
+	visibility:hidden
+}
+#xoblack{
+	position:absolute;
+	top:15px;
+	left:40px;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	cursor:pointer;
+	background-color:black;
+}
+#xowhite{
+	position:absolute;
+	top:15px;
+	right:40px;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	cursor:pointer;
+	background-color:white;
+}
+/*end button X and Y*/
+/****************************************************************/
+/*start turn restart hr*/
+.con .ply34{
+	width:450px;
+	margin:5px;
+	padding:7px;
+	color:#ffba08;
+	font-weight:bold;
+}
+
+
+.con .ply34 div{
+	cursor:pointer
+}
+#play3{
+	float:left;
+	margin-left:50px
+}
+#play4{
+	float:right;
+	margin-right:50px
+}
+
+hr{
+	background-color:#ffba08;
+	width:100%;
+	height:2px;
+	border:0px;
+}
+.con .re{
+	padding:5px;
+	color:#ffba08;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.con .re:hover{
+	cursor:pointer
+}
+
+#win{
+	color: #ffba08;
+	width:450px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+/*end turn resart hr */
+/****************************************************************/
+/****************************************************************/
+/*start the area we play*/
+.con .area{
+	background-color:#e85d04;
+	margin:5px;
+	height:450px;
+	width:450px;
+	border-radius:10px;
+	position:relative;
+	
+}
+
+/*game 3*/
+.con .game3{
+	display: grid;
+	width: 300px;
+	height: 300px;
+	margin:75px;
+	grid-template-columns: auto auto auto;
+	position:absolute;
+	z-index:2;
+	visibility:visible;
+}
+.con .game3 div{
+	display: flex;
+	width: 100px;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	font-weight: bold;
+	border: 1.5px solid black;
+	transition: background 0.3s ease-in-out;
+}
+.con .game3 div:hover {
+	cursor: pointer;
+	background-color:#9e0059
+}
+
+#game3d1, #game3d2, #game3d3, #gamed1, #gamed2, #gamed3{
+	border-top: none;
+}
+#game3d1, #game3d4, #game3d7, #gamed1, #gamed4, #gamed7{
+	border-left: none;
+}
+#game3d7, #game3d8, #game3d9, #gamed7, #gamed8, #gamed9{
+	border-bottom: none;
+}
+#game3d3, #game3d6, #game3d9, #gamed3, #gamed6, #gamed9{
+	border-right: none;
+}
+
+/*game 4*/
+.con .game4{
+	display: grid;
+	width: 400px;
+	height: 400px;
+	margin-top:-10px;
+	margin-left:20px;
+	grid-template-columns: auto auto auto auto;
+	position:absolute;
+	z-index:1;
+	visibility:hidden;
+}
+.con .game4 div{
+	display: flex;
+	width: 100px;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	font-weight: bold;
+	border: 1.5px solid black;
+	transition: background 0.3s ease-in-out;
+}
+.con .game4 div:hover {
+	cursor: pointer;
+	
+}
+#game4d1, #game4d2, #game4d3, #game4d4, #game44d1, #game44d2, #game44d3, #game44d4{
+	border-top: none;
+}
+#game4d1, #game4d5, #game4d9, #game4d13, #game44d1, #game44d5, #game44d9, #game44d13{
+	border-left: none;
+}
+#game4d13, #game4d14, #game4d15, #game4d16, #game44d13, #game44d14, #game44d15, #game44d16{
+	border-bottom: none;
+}
+#game4d4, #game4d8, #game4d12, #game4d16, #game44d4, #game44d8, #game44d12, #game44d16{
+	border-right: none;
+}
+/*end the area we play*/
+/****************************************************************/
+
+#k3{
+	color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

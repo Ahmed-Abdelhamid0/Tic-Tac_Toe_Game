@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>Tic-Tac-Toe</title>
+		<link rel="stylesheet" href="tictactoe.css"/> <!-- css file -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- لازم يتكتب -->
+        <script src="jqmin.js"></script> <!-- JQ library -->
+	</head>
+	<body>
+		
+		<div class="con">
+			<h1 id="title">Tic-Tac-Toe</h1>
+			
+			<div class="color">
+				<div id="choseColor">Chose Background Color</div>
+				<div> <span id="black"></span> <span id="white"></span> <span id="yellow"></span></div>
+			</div>
+			
+			<div class="btn">
+				<div id="x">X</div> 
+			</div>
+			<div id="xocolor"> <span id="xoblack" onClick="clo1(this.id)"></span> <span id="xowhite" ></span> </div>
+			<div class="ply34">
+				<div id="play3">play 3</div>
+				<div id="play4">play 4</div>
+			</div>
+			<div class="a2">
+			<div id="win"></div>
+				<div class="a2" id="win2"></div>
+				<div id="k3" align="center">X Turn Now</div>
+			</div>
+			
+			<div class="area" id="1" >
+				<div class="game3" >
+					<div class="hovcol" id="game3d1"onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d2" onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d3" onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d4" onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d5" onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d6" onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d7" onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d8" onClick="insrt(this.id)"></div>
+					<div class="hovcol" id="game3d9" onClick="insrt(this.id)"></div>
+				</div><br><br>
+				<div class="game4">
+					<div class="hovcol" id="game4d1" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d2" onClick="insrt2(this.id)" ></div>
+					<div class="hovcol" id="game4d3" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d4" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d5" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d6" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d7" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d8" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d9" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d10" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d11" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d12" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d13" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d14" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d15" onClick="insrt2(this.id)"></div>
+					<div class="hovcol" id="game4d16" onClick="insrt2(this.id)"></div>
+				</div>
+			</div>
+				<div class="area" id="2" >
+				<div class="game3" >
+					<div class="hovcol" id="gamed1" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed2" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed3" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed4" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed5" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed6" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed7" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed8" onClick="insrtx2(this.id)"></div>
+					<div class="hovcol" id="gamed9" onClick="insrtx2(this.id)"></div>
+				</div><br><br>
+					<div class="game4">
+					<div class="hovcol" id="game44d1" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d2" onClick="insrt4(this.id)" ></div>
+					<div class="hovcol" id="game44d3" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d4" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d5" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d6" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d7" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d8" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d9" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d10" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d11" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d12" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d13" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d14" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d15" onClick="insrt4(this.id)"></div>
+					<div class="hovcol" id="game44d16" onClick="insrt4(this.id)"></div>
+				</div>
+				</div>	
+			<hr id="breakline">
+			<div class="re" onClick="regame (this.id)">
+				restart game
+			</div>
+		</div>
+		
+        <script src="tictactoeJq.js"></script> <!-- JQ file -->
+        <script src="tictactoe.js"></script> <!-- JS file -->
+	</body>
+</html>
